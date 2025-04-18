@@ -1,12 +1,12 @@
 # app.py
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello Smart City! Welcome to your CyberSecure Portal"
+    return render_template("index.html")
 
 
 
